@@ -1,11 +1,34 @@
-
-bme680_bsec:
+bme68x_bsec2_i2c:
   address: 0x77
-  sample_rate: ulp  # Ultra Low Power: every 5 minutes
+  model: bme680
+  operating_age: 28d
+  sample_rate: LP
+  supply_voltage: 3.3V
 
 sensor:
+  - platform: bme68x_bsec2
+    temperature:
+      name: "BME68x Temperature"
+      id: bme_temp
+    pressure:
+      name: "BME68x Pressure"
+      id: bme_pressure
+    humidity:
+      name: "BME68x Humidity"
+      id: bme_humidity
+    iaq:
+      name: "BME68x IAQ"
+      id: iaq
+    co2_equivalent:
+      name: "BME68x CO2 Equivalent"
+      id: bme_eco2
+    breath_voc_equivalent:
+      name: "BME68x Breath VOC Equivalent"
+      id: bme_voc
+      
+sensor:
   # https://esphome.io/components/sensor/bme680_bsec.html
-  - platform: bme680_bsec
+  - platform: bme680_bsec2
     temperature:
       name: "BME680 BSEC Temperature"
       id: bme_temp
@@ -26,7 +49,7 @@ sensor:
       id: bme_voc
 
 text_sensor:
-  - platform: bme680_bsec
+  - platform: bme680_bsec2
     iaq_accuracy:
       name: "BME680 IAQ Accuracy"
       id: iaq_accuracy
