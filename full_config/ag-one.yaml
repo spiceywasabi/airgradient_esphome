@@ -15,7 +15,7 @@ esphome:
   friendly_name: AG One
   name_add_mac_suffix: false
   project:
-    name: mallocarray.airgradient
+    name: spiceywasabi.airgradient
     version: 4.1.0
   min_version: 2024.6.0
   on_boot:
@@ -1304,6 +1304,6 @@ ota:
   version: 2
   port: 3232
 dashboard_import:
-  package_import_url: github://MallocArray/airgradient_esphome/airgradient-one.yaml
+  package_import_url: github://spiceywasabi/airgradient_esphome/airgradient-one.yaml
   import_full_config: false
 

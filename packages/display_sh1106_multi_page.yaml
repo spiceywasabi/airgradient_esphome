@@ -23,7 +23,7 @@ display:
     # rotation: 180°
     pages:
       - id: airgradient_default
-        # https://forum.airgradient.com/t/airgradient-one-customized-mallocarray-esphome-display/1328
+        # https://forum.airgradient.com/t/airgradient-one-customized-spiceywasabi-esphome-display/1328
         lambda: |-
           if (id(display_in_f).state) {
             it.printf(0, 0, id(open_sans_14), "%.1f°F", id(temp).state*9/5+32);

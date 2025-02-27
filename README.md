@@ -131,11 +131,11 @@ wifi:
 
 #### Using local packages
 
-By default, packages are referencing this GitHub repository, allowing you to do a new Install from ESPHome dashboard to get the latest modifications without downloading other files, but does require an Internet connection.  If you wish to have more control over modifications or only reference local files, copy the `packages` folder to your local ESPHome folder in a `packages` subfolder and replace `github://MallocArray/airgradient_esphome/packages `with `!include packages`
+By default, packages are referencing this GitHub repository, allowing you to do a new Install from ESPHome dashboard to get the latest modifications without downloading other files, but does require an Internet connection.  If you wish to have more control over modifications or only reference local files, copy the `packages` folder to your local ESPHome folder in a `packages` subfolder and replace `github://spiceywasabi/airgradient_esphome/packages `with `!include packages`
 
 ```yaml
 # Example
-board: github://MallocArray/airgradient_esphome/packages/sensor_s8.yaml
+board: github://spiceywasabi/airgradient_esphome/packages/sensor_s8.yaml
 # becomes
 board: !include packages/sensor_s8.yaml
 ```
