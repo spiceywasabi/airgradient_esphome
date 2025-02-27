@@ -1,5 +1,4 @@
 bme68x_bsec2_i2c:
-  address: 0x77
   model: bme680
   operating_age: 28d
   supply_voltage: 3.3V
