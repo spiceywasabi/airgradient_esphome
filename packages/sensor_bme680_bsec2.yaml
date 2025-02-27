@@ -25,7 +25,6 @@ sensor:
       id: bme_voc
       
 sensor:
-  # https://esphome.io/components/sensor/bme680_bsec.html
   - platform: bme680_bsec2
     temperature:
       name: "BME680 BSEC Temperature"
