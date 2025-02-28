@@ -23,25 +23,6 @@ sensor:
     breath_voc_equivalent:
       name: "BME68x Breath VOC Equivalent"
       id: bme_voc
-  - platform: bme68x_bsec2
-    temperature:
-      name: "BME680 BSEC Temperature"
-      id: bme_temp
-    pressure:
-      name: "BME680 BSEC Pressure"
-      id: bme_pressure
-    humidity:
-      name: "BME680 BSEC Humidity"
-      id: bme_humidity
-    iaq:
-      name: "BME680 BSEC IAQ"
-      id: bme_iaq
-    co2_equivalent:
-      name: "BME680 BSEC CO2 Equivalent"
-      id: bme_eco2
-    breath_voc_equivalent:
-      name: "BME680 BSEC Breath VOC Equivalent"
-      id: bme_voc
 
 text_sensor:
   - platform: bme68x_bsec2
