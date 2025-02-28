@@ -23,8 +23,6 @@ sensor:
     breath_voc_equivalent:
       name: "BME68x Breath VOC Equivalent"
       id: bme_voc
-      
-sensor:
   - platform: bme680_bsec2
     temperature:
       name: "BME680 BSEC Temperature"
