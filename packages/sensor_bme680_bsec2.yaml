@@ -16,7 +16,7 @@ sensor:
       id: bme_humidity
     iaq:
       name: "BME68x IAQ"
-      id: iaq
+      id: bme_iaq
     co2_equivalent:
       name: "BME68x CO2 Equivalent"
       id: bme_eco2
